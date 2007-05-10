@@ -4,7 +4,7 @@ use ExtUtils::MakeMaker;
 
 WriteMakefile(
     NAME                => 'POE::Session::AttributeBased',
-    AUTHOR              => 'Chris Fedde <cfedde@cpan.org>',
+    AUTHOR              => 'Chris Fedde <cfedde at cpan.org>',
     VERSION_FROM        => 'lib/POE/Session/AttributeBased.pm',
     ABSTRACT_FROM       => 'lib/POE/Session/AttributeBased.pm',
     PL_FILES            => {},

@@ -6,4 +6,4 @@ BEGIN {
 	use_ok( 'POE::Session::AttributeBased' );
 }
 
-diag( "Testing POE::Session::AttributeBase $POE::Session::AttributeBased::VERSION, Perl $], $^X" );
+diag( "Testing POE::Session::AttributeBased $POE::Session::AttributeBased::VERSION, Perl $], $^X" );
