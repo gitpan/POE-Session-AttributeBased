@@ -18,3 +18,7 @@ Revision history for POE-Session-AttributeBased
 0.6     Thu May 10 00:22:53 MDT 2007
 	renamed class back to a previously released version that does 
 	about the same thing as this.
+
+0.7	Fri May 11 11:45:10 MDT 2007
+        clean up prereqs 
+	format offset pod a bit.

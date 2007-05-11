@@ -11,11 +11,11 @@ POE::Session::AttributeBased - POE::Session syntax sweetener
 
 =head1 VERSION
 
-Version 0.06
+Version 0.07
 
 =cut
 
-our $VERSION = '0.06';
+our $VERSION = '0.07';
 
 =head1 SYNOPSIS
 
@@ -61,9 +61,10 @@ A simple mixin that sprinkles sugar all over event handlers.
 
 =head1 DESCRIPTION
 
-Provides an attribute handler that does some bookkeeping for state handlers.
-There have been a few of these classes for POE.
-This is probably the most minimal.
+Provides an attribute handler that does some bookkeeping for state
+handlers.  There have been a few of these classes for POE.  This
+is probably the most minimal.  It supports only the inline attribute syntax.
+but that seems sufficient for cranking up a POE session.
 
 =head1 FUNCTIONS
 
@@ -97,45 +98,92 @@ sub Offset {
 }
 
 =head2 OBJECT
-=head2 SESSION
-=head2 KERNEL
-=head2 HEAP
-=head2 STATE
-=head2 SENDER
-=head2 CALLER_FILE
-=head2 CALLER_LINE
-=head2 CALLER_STATE
-=head2 ARG0
-=head2 ARG1
-=head2 ARG2
-=head2 ARG3
-=head2 ARG4
-=head2 ARG5
-=head2 ARG6
-=head2 ARG7
-=head2 ARG8
-=head2 ARG9
+=cut
+sub OBJECT       : ATTR(SCALAR) { Offset @_; }
 
+=head2 SESSION
 =cut
 
-sub OBJECT       : ATTR(SCALAR) { Offset @_; }
 sub SESSION      : ATTR(SCALAR) { Offset @_; }
+
+=head2 KERNEL
+=cut
 sub KERNEL       : ATTR(SCALAR) { Offset @_; }
+
+=head2 HEAP
+=cut
 sub HEAP         : ATTR(SCALAR) { Offset @_; }
+
+=head2 STATE
+=cut
 sub STATE        : ATTR(SCALAR) { Offset @_; }
+
+=head2 SENDER
+=cut
 sub SENDER       : ATTR(SCALAR) { Offset @_; }
+
+=head2 CALLER_FILE
+=cut
 sub CALLER_FILE  : ATTR(SCALAR) { Offset @_; }
+
+=head2 CALLER_LINE
+=cut
+
 sub CALLER_LINE  : ATTR(SCALAR) { Offset @_; }
+
+=head2 CALLER_STATE
+=cut
+
 sub CALLER_STATE : ATTR(SCALAR) { Offset @_; }
+
+=head2 ARG0
+=cut
+
 sub ARG0         : ATTR(SCALAR) { Offset @_; }
+
+=head2 ARG1
+=cut
+
 sub ARG1         : ATTR(SCALAR) { Offset @_; }
+
+=head2 ARG2
+=cut
+
 sub ARG2         : ATTR(SCALAR) { Offset @_; }
+
+=head2 ARG3
+=cut
+
 sub ARG3         : ATTR(SCALAR) { Offset @_; }
+
+=head2 ARG4
+=cut
+
 sub ARG4         : ATTR(SCALAR) { Offset @_; }
+
+=head2 ARG5
+=cut
+
 sub ARG5         : ATTR(SCALAR) { Offset @_; }
+
+=head2 ARG6
+=cut
+
 sub ARG6         : ATTR(SCALAR) { Offset @_; }
+
+=head2 ARG7
+=cut
+
 sub ARG7         : ATTR(SCALAR) { Offset @_; }
+
+=head2 ARG8
+=cut
+
 sub ARG8         : ATTR(SCALAR) { Offset @_; }
+
+=head2 ARG9
+=cut
+
 sub ARG9         : ATTR(SCALAR) { Offset @_; }
 
 =head2 inline_states
