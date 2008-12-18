@@ -1,13 +1,17 @@
-# http://module-build.sourceforge.net/META-spec.html
-#XXXXXXX This is a prototype!!!  It will change in the future!!! XXXXX#
-name:         POE-Session-AttributeBased
-version:      0.07
-version_from: lib/POE/Session/AttributeBased.pm
-installdirs:  site
-requires:
+--- #YAML:1.0
+name:                POE-Session-AttributeBased
+version:             0.08
+abstract:            POE::Session syntax sweetener
+license:             ~
+author:              
+    - Chris Fedde <cfedde at cpan.org>
+generated_by:        ExtUtils::MakeMaker version 6.42
+distribution_type:   module
+requires:     
+    Attribute::Handlers:           0
     POE:                           0
     POE::Session:                  0
     Test::More:                    0
-
-distribution_type: module
-generated_by: ExtUtils::MakeMaker version 6.30
+meta-spec:
+    url:     http://module-build.sourceforge.net/META-spec-v1.3.html
+    version: 1.3

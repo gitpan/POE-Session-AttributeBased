@@ -12,6 +12,7 @@ WriteMakefile(
         'Test::More' => 0,
 	'POE' => 0,
 	'POE::Session' => 0,
+	'Attribute::Handlers' => 0,
     },
     dist                => { COMPRESS => 'gzip -9f', SUFFIX => 'gz', },
     clean               => { FILES => 'POE-Session-AttributeBased-*' },
