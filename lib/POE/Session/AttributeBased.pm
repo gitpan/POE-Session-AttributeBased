@@ -1,4 +1,5 @@
 package POE::Session::AttributeBased;
+use 5.8.0;
 use Attribute::Handlers;
 require POE::Session;    # for the offset constants
 
@@ -11,11 +12,11 @@ POE::Session::AttributeBased - POE::Session syntax sweetener
 
 =head1 VERSION
 
-Version 0.08
+Version 0.09
 
 =cut
 
-our $VERSION = '0.08';
+our $VERSION = '0.09';
 
 =head1 SYNOPSIS
 
@@ -57,7 +58,7 @@ our $VERSION = '0.08';
 
 =head1 ABSTRACT
 
-A simple mixin that sprinkles sugar all over event handlers.
+A simple attribute handler mixin that makes POE state easier to keep track of.
 
 =head1 DESCRIPTION
 
@@ -84,7 +85,8 @@ sub State : ATTR(CODE) {
 
 =head2 Offset
 
-POE::Session Offsets each have their own packet of sugar
+POE::Session argument offset handler.
+This use of the DB module to get extra info from caller might be risky.
 
 =cut
 
@@ -188,7 +190,7 @@ sub ARG9         : ATTR(SCALAR) { Offset @_; }
 
 =head2 inline_states
 
-Returns the list of states in a syntax that is usable by POE::Session->create.
+Returns the list of states in a format that is usable by POE::Session->create.
 Can also specify what to return as the hash key so that it is useful in
 packages like POE::Component::Server::TCP where the state list has a 
 different tag.

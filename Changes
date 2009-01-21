@@ -11,14 +11,23 @@ Revision history for POE-Session-AttributeBased
 0.04    Thu Jul  6 10:38:13 MDT 2006
          minor doc changes.
 
-0.5     Wed May  2 23:57:08 MDT 2007
+0.05    Wed May  2 23:57:08 MDT 2007
         Code migrated from some other modules and totaly reworked
         the API as a mixin.
 
-0.6     Thu May 10 00:22:53 MDT 2007
+0.06    Thu May 10 00:22:53 MDT 2007
 	renamed class back to a previously released version that does 
 	about the same thing as this.
 
-0.7	Fri May 11 11:45:10 MDT 2007
+0.07	Fri May 11 11:45:10 MDT 2007
         clean up prereqs 
 	format offset pod a bit.
+
+0.08    Date not captured
+        repair of a smoke test bug.
+        developer spanked
+            
+
+0.9	Tue Jan 20 21:32:19 MST 2009
+        smoke testing finds perl version backwards compatability failure
+        now marked with proper version.
