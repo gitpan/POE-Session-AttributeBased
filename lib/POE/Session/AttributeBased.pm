@@ -1,5 +1,5 @@
 package POE::Session::AttributeBased;
-use 5.8.0;
+use 5.008000;
 use Attribute::Handlers;
 require POE::Session;    # for the offset constants
 
@@ -12,11 +12,11 @@ POE::Session::AttributeBased - POE::Session syntax sweetener
 
 =head1 VERSION
 
-Version 0.09
+Version 0.10
 
 =cut
 
-our $VERSION = '0.09';
+our $VERSION = '0.10';
 
 =head1 SYNOPSIS
 
@@ -247,7 +247,7 @@ L<http://search.cpan.org/dist/POE-Session-AttributeBased>
 
 =head1 COPYRIGHT & LICENSE
 
-Copyright 2007 Chris Fedde, all rights reserved.
+Copyright 2010 Chris Fedde, all rights reserved.
 
 This program is free software; you can redistribute it and/or modify it
 under the same terms as Perl itself.
